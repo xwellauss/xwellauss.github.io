@@ -1,3 +1,6 @@
 # techie-guy.github.io
 
-Homepage
+My Homepage
+
+## Attributions
+All logos in `images/logos` belong to their respective owners.
