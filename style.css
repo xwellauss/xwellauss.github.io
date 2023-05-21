@@ -1,0 +1,37 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+
+	font-family: Arial;
+	background-color: #242424;
+	color: #fff;
+}
+
+.pfp {
+	transition: transform 250ms;
+}
+
+.pfp:hover {
+	transform: translateY(10px);
+}
+
+.social-link-list {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.social-link-item {
+	transition: transform 250ms;
+}
+
+.social-link-item:hover {
+	transform: translateY(-10px);
+}
+
+.social-link-item img {
+	height: 3rem;
+}
