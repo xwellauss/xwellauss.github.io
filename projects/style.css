@@ -10,6 +10,19 @@ body {
 	color: #fff;
 }
 
+#heading {
+	font-size: 3.5em;
+}
+
+.projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
 a:link, a:visited, a:active {
 	text-decoration: none;
 	color: #fff;
@@ -20,28 +33,18 @@ a:hover {
 	color: #b8c0d4;
 }
 
-.pfp {
-	transition: transform 250ms;
-}
-
-.pfp:hover {
-	transform: translateY(10px);
-}
-
-.social-link-list {
+.project {
 	display: flex;
-	flex-direction: row;
-	gap: 0.5rem;
-}
-
-.social-link-item {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #95b6c9;
+	border-radius: 10px;
+	color: #000;
 	transition: transform 250ms;
+	padding: 0.5em;
 }
 
-.social-link-item:hover {
+.project:hover {
 	transform: translateY(-10px);
-}
-
-.social-link-item img {
-	height: 3rem;
 }
