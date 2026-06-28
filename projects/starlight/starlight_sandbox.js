@@ -829,7 +829,7 @@ function dbg(text) {
 }
 
 var ASM_CONSTS = {
- 84266756: ($0, $1, $2, $3, $4) => {
+ 20188540: ($0, $1, $2, $3, $4) => {
   if (typeof window === "undefined" || (window.AudioContext || window.webkitAudioContext) === undefined) {
    return 0;
   }
@@ -901,7 +901,7 @@ var ASM_CONSTS = {
   window.miniaudio.referenceCount += 1;
   return 1;
  },
- 84268934: () => {
+ 20190718: () => {
   if (typeof (window.miniaudio) !== "undefined") {
    window.miniaudio.unlock_event_types.map(function(event_type) {
     document.removeEventListener(event_type, window.miniaudio.unlock, true);
@@ -912,8 +912,8 @@ var ASM_CONSTS = {
    }
   }
  },
- 84269238: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
- 84269342: () => {
+ 20191022: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
+ 20191126: () => {
   try {
    var temp = new (window.AudioContext || window.webkitAudioContext);
    var sampleRate = temp.sampleRate;
@@ -923,7 +923,7 @@ var ASM_CONSTS = {
    return 0;
   }
  },
- 84269513: ($0, $1, $2, $3, $4, $5) => {
+ 20191297: ($0, $1, $2, $3, $4, $5) => {
   var deviceType = $0;
   var channels = $1;
   var sampleRate = $2;
@@ -994,8 +994,8 @@ var ASM_CONSTS = {
   device.pDevice = pDevice;
   return window.miniaudio.track_device(device);
  },
- 84272390: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
- 84272463: $0 => {
+ 20194174: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
+ 20194247: $0 => {
   var device = window.miniaudio.get_device_by_index($0);
   if (device.scriptNode !== undefined) {
    device.scriptNode.onaudioprocess = function(e) {};
@@ -1010,15 +1010,15 @@ var ASM_CONSTS = {
   device.webaudio = undefined;
   device.pDevice = undefined;
  },
- 84272863: $0 => {
+ 20194647: $0 => {
   window.miniaudio.untrack_device_by_index($0);
  },
- 84272913: $0 => {
+ 20194697: $0 => {
   var device = window.miniaudio.get_device_by_index($0);
   device.webaudio.resume();
   device.state = window.miniaudio.device_state.started;
  },
- 84273052: $0 => {
+ 20194836: $0 => {
   var device = window.miniaudio.get_device_by_index($0);
   device.webaudio.suspend();
   device.state = window.miniaudio.device_state.stopped;
@@ -7882,9 +7882,9 @@ var stackAlloc = createExportWrapper("stackAlloc");
 
 var _emscripten_stack_get_current = () => (_emscripten_stack_get_current = wasmExports["emscripten_stack_get_current"])();
 
-var dynCall_iiiji = Module["dynCall_iiiji"] = createExportWrapper("dynCall_iiiji");
-
 var dynCall_iiji = Module["dynCall_iiji"] = createExportWrapper("dynCall_iiji");
+
+var dynCall_iiiji = Module["dynCall_iiiji"] = createExportWrapper("dynCall_iiiji");
 
 var dynCall_iij = Module["dynCall_iij"] = createExportWrapper("dynCall_iij");
 
@@ -7892,7 +7892,7 @@ var dynCall_jii = Module["dynCall_jii"] = createExportWrapper("dynCall_jii");
 
 var dynCall_jiji = Module["dynCall_jiji"] = createExportWrapper("dynCall_jiji");
 
-var ___emscripten_embedded_file_data = Module["___emscripten_embedded_file_data"] = 84249904;
+var ___emscripten_embedded_file_data = Module["___emscripten_embedded_file_data"] = 20176128;
 
 Module["addRunDependency"] = addRunDependency;
 
